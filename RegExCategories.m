@@ -216,74 +216,74 @@
 
 
 
-@implementation NSString (ObjectiveCRegexCategories)
-
-- (NSRegularExpression*) toRx
-{
-    return [[NSRegularExpression alloc] initWithPattern:self];
-}
-
-- (NSRegularExpression*) toRxIgnoreCase:(BOOL)ignoreCase
-{
-    return [NSRegularExpression rx:self ignoreCase:ignoreCase];
-}
-
-- (NSRegularExpression*) toRxWithOptions:(NSRegularExpressionOptions)options
-{
-    return [NSRegularExpression rx:self options:options];
-}
-
-- (BOOL) isMatch:(NSRegularExpression*)rx
-{
-    return [rx isMatch:self];
-}
-
-- (int) indexOf:(NSRegularExpression*)rx
-{
-    return [rx indexOf:self];
-}
-
-- (NSArray*) split:(NSRegularExpression*)rx
-{
-    return [rx split:self];
-}
-
-- (NSString*) replace:(NSRegularExpression*)rx with:(NSString*)replacement
-{
-    return [rx replace:self with:replacement];
-}
-
-- (NSString*) replace:(NSRegularExpression *)rx withBlock:(NSString*(^)(NSString* match))replacer
-{
-    return [rx replace:self withBlock:replacer];
-}
-
-- (NSString*) replace:(NSRegularExpression *)rx withDetailsBlock:(NSString*(^)(RxMatch* match))replacer
-{
-    return [rx replace:self withDetailsBlock:replacer];
-}
-
-- (NSArray*) matches:(NSRegularExpression*)rx
-{
-    return [rx matches:self];
-}
-
-- (NSString*) firstMatch:(NSRegularExpression*)rx
-{
-    return [rx firstMatch:self];
-}
-
-- (NSArray*) matchesWithDetails:(NSRegularExpression*)rx
-{
-    return [rx matchesWithDetails:self];
-}
-
-- (RxMatch*) firstMatchWithDetails:(NSRegularExpression*)rx
-{
-    return [rx firstMatchWithDetails:self];
-}
-
-@end
+//@implementation NSString (ObjectiveCRegexCategories)
+//
+//- (NSRegularExpression*) toRx
+//{
+//    return [[NSRegularExpression alloc] initWithPattern:self];
+//}
+//
+//- (NSRegularExpression*) toRxIgnoreCase:(BOOL)ignoreCase
+//{
+//    return [NSRegularExpression rx:self ignoreCase:ignoreCase];
+//}
+//
+//- (NSRegularExpression*) toRxWithOptions:(NSRegularExpressionOptions)options
+//{
+//    return [NSRegularExpression rx:self options:options];
+//}
+//
+//- (BOOL) isMatch:(NSRegularExpression*)rx
+//{
+//    return [rx isMatch:self];
+//}
+//
+//- (int) indexOf:(NSRegularExpression*)rx
+//{
+//    return [rx indexOf:self];
+//}
+//
+//- (NSArray*) split:(NSRegularExpression*)rx
+//{
+//    return [rx split:self];
+//}
+//
+//- (NSString*) replace:(NSRegularExpression*)rx with:(NSString*)replacement
+//{
+//    return [rx replace:self with:replacement];
+//}
+//
+//- (NSString*) replace:(NSRegularExpression *)rx withBlock:(NSString*(^)(NSString* match))replacer
+//{
+//    return [rx replace:self withBlock:replacer];
+//}
+//
+//- (NSString*) replace:(NSRegularExpression *)rx withDetailsBlock:(NSString*(^)(RxMatch* match))replacer
+//{
+//    return [rx replace:self withDetailsBlock:replacer];
+//}
+//
+//- (NSArray*) matches:(NSRegularExpression*)rx
+//{
+//    return [rx matches:self];
+//}
+//
+//- (NSString*) firstMatch:(NSRegularExpression*)rx
+//{
+//    return [rx firstMatch:self];
+//}
+//
+//- (NSArray*) matchesWithDetails:(NSRegularExpression*)rx
+//{
+//    return [rx matchesWithDetails:self];
+//}
+//
+//- (RxMatch*) firstMatchWithDetails:(NSRegularExpression*)rx
+//{
+//    return [rx firstMatchWithDetails:self];
+//}
+//
+//@end
 
 
 
